@@ -48,5 +48,25 @@
 		"diretor":"Emilio Estevez",
 		"elenco": "Martin Sheen, Emilio Estevez, Deborah Kara Unger, Yorick Van Wangeningen, James Nesbitt, Renee Estevez, Spencer Garrett, Tchéky Karyo",
 		"genero": "Comédia, Aventura, Drama"
+	},
+	"filme6": {
+		"id": 6,
+		"titulo": "Comer, Rezar, Amar",
+		"data": "13/08/2010",
+		"sinopse": "Elizabeth (Julia Roberts) descobre que sempre teve problemas nos seus relacionamentos amorosos. Um dia, ela larga tudo, marido, trabalho, amigos, decidida a viver novas experiências em lugares diferentes por um ano inteiro. E parte para a Índia, Itália e Bali, para se reencontrar numa grande viagem de auto conhecimento.",
+		"duracao":"2hrs 20min",
+		"diretor":"Ryan Murphy",
+		"elenco": "Julia Roberts, Richard Jenkins, Javier Bardem, Billy Crudup, Viola Davis, James Franco, David Lyons, Tuva Novotny",
+		"genero": "Drama"
+	},
+	"filme7": {
+		"id": 7,
+		"titulo": "Comer, Rezar, Amar",
+		"data": "13/08/2010",
+		"sinopse": "Elizabeth (Julia Roberts) descobre que sempre teve problemas nos seus relacionamentos amorosos. Um dia, ela larga tudo, marido, trabalho, amigos, decidida a viver novas experiências em lugares diferentes por um ano inteiro. E parte para a Índia, Itália e Bali, para se reencontrar numa grande viagem de auto conhecimento.",
+		"duracao":"2hrs 20min",
+		"diretor":"Ryan Murphy",
+		"elenco": "Julia Roberts, Richard Jenkins, Javier Bardem, Billy Crudup, Viola Davis, James Franco, David Lyons, Tuva Novotny",
+		"genero": "Drama"
 	}
 }
