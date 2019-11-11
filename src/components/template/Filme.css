@@ -1,0 +1,22 @@
+.filme{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0px 15px;
+    background-color: #28a84b;
+    box-shadow: var(--shadow);
+}
+.itemFilme{
+	display: flex;
+	flex: 1;
+	flex-direction: row;
+	border: solid;
+	border-width: 2;
+	padding: 3px;
+	margin: 10px;
+	width: 50%;
+}
+.text-title{
+	font-weight: bold;
+	padding: 3px;
+}
