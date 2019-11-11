@@ -1,11 +1,25 @@
 header.header {
-    background-color: #28a84b;
+    background-color: #72a878;
     padding: 30px 15px;
     overflow: hidden;
     white-space: nowrap;
-    box-shadow: var(--shadow);
 }
 
 header.header h1{
     font-size: 1.8em;
+}
+
+.buscar {
+  width:200px;
+  margin-left: 300px;
+  border-radius: 10px;
+  font-size: 24px;
+  border-width: 0px;
+}
+
+.bttbuscar{
+	border-radius: 10px;
+	border-width: 0px;
+	margin-left: 2px;
+	background-color: #995718;
 }

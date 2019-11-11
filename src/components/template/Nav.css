@@ -1,8 +1,9 @@
 aside.menu-area {
-    background-color: #28a84b;;
+    background-color: #72a878;;
     box-shadow: 
         2px 0 10px 0 rgba(0, 0, 0, 0.12)
         2px 0 15px 0 rgba(0, 0, 0, 0.09);
+    width: 65%; 
 }
 
 .menu a{
@@ -11,6 +12,7 @@ aside.menu-area {
     color: #ffffff;
     padding: 15px;
     font-weight: 300;
+    font-size: 16px;
 }
 
 .menu a:hover {

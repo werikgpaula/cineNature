@@ -1,13 +1,11 @@
 aside.logo{
-    background-color: #28a84b;
+    background-color: #72a878;
     display: flex;
     justify-content: left;
     align-items: left;
 }
 
 aside.logo img{
-    margin-left: 10px;
-    padding: 0px 50px 0px 0px;
-    width: 100%;
-    height: 100%;
+    margin-left: 0px;
+    padding: 0px 0px 0px 0px;
 }
