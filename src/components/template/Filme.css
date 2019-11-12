@@ -9,6 +9,13 @@
 	border-width: 2;
 	border-color: orange;
 }
+.itemFilme{
+	border: solid;
+	border-width: 2;
+	border-color: black;
+	background-color: #994b52;
+	margin:8px;
+}
 .text-title{
 	font-weight: bold;
 	padding: 3px;
@@ -18,6 +25,6 @@
 	width: 240px;
 	height: 340px;
 	padding: 2px;
-	margin: 8px;
+	margin: 4px;
 }
 
