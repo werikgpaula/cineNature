@@ -1,20 +1,13 @@
-.filme{
+.Filme{
     display: flex;
     align-items: center;
-    justify-content: flex-end;
     padding: 0px 15px;
-    background-color: #28a84b;
-    box-shadow: var(--shadow);
+
 }
-.itemFilme{
-	display: flex;
-	flex: 1;
-	flex-direction: row;
+.itemFilme:hover{
 	border: solid;
 	border-width: 2;
-	padding: 3px;
-	margin: 10px;
-	width: 50%;
+	border-color: orange;
 }
 .text-title{
 	font-weight: bold;
@@ -22,5 +15,9 @@
 }
 
 .Filme > img {
-	width: 220px;
+	width: 240px;
+	height: 340px;
+	padding: 2px;
+	margin: 8px;
 }
+

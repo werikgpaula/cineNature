@@ -3,16 +3,19 @@ aside.menu-area {
     box-shadow: 
         2px 0 10px 0 rgba(0, 0, 0, 0.12)
         2px 0 15px 0 rgba(0, 0, 0, 0.09);
-    width: 65%; 
+    width: 80%; 
 }
 
 .menu a{
     display: block;
     text-decoration: none;
     color: #ffffff;
-    padding: 15px;
-    font-weight: 300;
+    padding: 14px;
+    margin: 1px;
     font-size: 16px;
+    border-width: 3px;
+    border-color: gray;
+    border-style: ridge;
 }
 
 .menu a:hover {

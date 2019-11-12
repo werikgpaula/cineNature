@@ -36,7 +36,7 @@ let cartazes = [
 ]
 export default props =>
 (
-    <div className='Filme'>
+    <div className='Filme flex flex-wrap'>
 		{cartazes.map(cartaz => (
 			<Link to={{
 				pathname: "/Sinopse",
@@ -44,7 +44,7 @@ export default props =>
 					id: cartaz.id,
 					img: cartaz.src
 				}
-			}} className='Filme'>
+			}} className='Filme itemFilme'>
 				<img id={cartaz.id} src={cartaz.src} title={cartaz.nome}></img>
        		</Link>
 		))}
