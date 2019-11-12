@@ -1,5 +1,5 @@
 import './Filme.css'
-import React from 'react'
+import React, {Component} from 'react'
 import Main from './Main'
 
 let filmes = [
@@ -55,46 +55,85 @@ let filmes = [
 	}
 ];
 
-export default props => (
-    <Main>
-        <div className='Filme'>
-            <ul>
-                {filmes.find((filme) => filme.id === props.location.params.id(
-                    <li key={filme.id} className ='itemFilme'>
-                        <div>
-                            <span className="text-title">
-                                {filme.titulo}  ({filme.data}) 
-                            </span>
-                            <div>
-                                <span className="text-title">
-                                    Sinopse:  
-                                </span> 
-                                <span>
-                                    {filme.sinopse}
-                                </span>
-                                <div>
-                                    <span className="text-title">
-                                        Diretor: 
-                                    </span>
-                                    {filme.diretor}
-                                </div>
-                                <div>
-                                    <span className="text-title">
-                                        Elenco: 
-                                    </span> 
-                                    {filme.elenco}
-                                </div>
-                                <div>
-                                    <span className="text-title">
-                                    Gênero: 
-                                    </span>
-                                    {filme.genero}
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                ))}
-            </ul>
-        </div>
-    </Main>
-)
+const headerProps = {
+    icon: 'list-alt',
+    title: ''
+}
+
+export default class Sinopse extends Component{
+
+	constructor(props) {
+		super(props);     
+		this.componentWillMount = this.componentWillMount.bind(this)
+		this.showSinopse = this.showSinopse.bind(this);
+		this.state = {
+		  id: props.location.params.id,
+		  movie: []
+		}
+	  };
+
+	componentWillMount(){
+		const self = this;
+		filmes.forEach(function(data){
+			if(data.id == self.state.id){
+				self.setState({movie: data})
+				headerProps.title = data.titulo
+			}
+		})
+	 }
+
+	 showSinopse(){
+		return(
+			<div>
+				<ul>
+					<li key={this.state.movie.id}>
+						<div>
+							<span className="text-title">
+								Data:
+							</span>
+							<span>
+								{this.state.movie.data}
+							</span>
+
+							<div>
+								<span className="text-title">
+									Sinopse:  
+								</span> 
+								<span>
+									{this.state.movie.sinopse}
+								</span>
+								<div>
+									<span className="text-title">
+										Diretor: 
+									</span>
+									{this.state.movie.diretor}
+								</div>
+								<div>
+									<span className="text-title">
+										Elenco: 
+									</span> 
+									{this.state.movie.elenco}
+								</div>
+								<div>
+									<span className="text-title">
+									Gênero: 
+									</span>
+									{this.state.movie.genero}
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+
+		)
+	};
+
+	render(){
+		return(
+			<Main {...headerProps}>
+				{this.showSinopse()}
+			</Main>
+		)
+	};
+}
